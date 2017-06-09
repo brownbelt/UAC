@@ -7,7 +7,7 @@ Run lpe.exe  .... this will drop the contents of our cab file into system32!
 
 HOW THIS WORKS:
 
-We run wusa with a cab file as argument. This will try to extract the contents into a random folder in "c:\", we watch for the creation of this folder and turn it into a junction to system32.
+We run wusa with a cab file as argument. This will try to extract the contents into a random folder in "c:\", we watch for the creation of this folder and turn it into a junction to system32. (there is probably a way to get rid of that wusa error screen .. but i'll leave that to your imagination)
 
 HOW TO EXPLOIT:
 
