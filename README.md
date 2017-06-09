@@ -1,8 +1,8 @@
 HOW TO USE:
 
-Drop the fake.cab into your c:\users\\%username%\downloads folder (or change it in the source code ;) 
+Drop a cab file named "fake.cab" into your c:\users\\%username%\downloads folder (or change it in the source code ;) 
 
-Run lpe.exe  .... this will drop the contents of our cab file into system32 (if you use the supplied cab file it will drop a file name "evil.dll" into system32)!
+Run lpe.exe  .... this will drop the contents of our cab file into system32 
 
 
 HOW THIS WORKS:
