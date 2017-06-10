@@ -20,4 +20,4 @@ FINAL THOUGHTS:
 
 UAC is really easy to bypass. I understand that it is not considered a security boundary, the attack surface is too big.. and perhaps the solution is not making UAC a security boundary.. but advising people to use non-admin accounts, enforcing least privilege is also the user's task! ;).
 
-Disclaimer: I didn't clean up the code.. some things are leftovers from a previous iteration :). Feel free to clean it up yourself!
+Disclaimer: I didn't clean up the code.
