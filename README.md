@@ -1,3 +1,5 @@
+(Works in latest windows 10 versions)
+
 HOW TO USE:
 
 Drop a cab file named "fake.cab" into your c:\users\\%username%\downloads folder (or change it in the source code ;) 
