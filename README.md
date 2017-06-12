@@ -1,6 +1,6 @@
 (Works in latest windows 10 versions)
 
-UPDATE 6/13/2017: Now includes dll hijacking vuln. Drops ualapi.dll (make sure you add this dll to fake.cab or use my cab file from "FOR_YOUR_DOWNLOADS_FOLDER") into system32 and launches FXSUNATD.exe to trigger the vuln.
+UPDATE 6/13/2017: Now includes dll hijacking vuln. Drops ualapi.dll (make sure you add this dll to fake.cab or use my cab file from "FOR_YOUR_DOWNLOADS_FOLDER") into system32 and launches FXSUNATD.exe to trigger the vuln. Look in process monitor to check the result, or change the actual dll so it pops on the user's desktop.
 
 HOW TO USE:
 
