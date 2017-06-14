@@ -1,4 +1,5 @@
 (Works in latest windows 10 versions)
+Demo: https://www.youtube.com/watch?v=hwkmhcm-B-U
 
 UPDATE 6/13/2017: Now includes dll hijacking vuln. Drops ualapi.dll (make sure you add this dll to fake.cab or use my cab file from "FOR_YOUR_DOWNLOADS_FOLDER") into system32 and launches FXSUNATD.exe to trigger the vuln. Look in process explorer to check the result, or change the actual dll so it pops on the user's desktop. (I probably shouldn't have added this step, but whatever, I got bored).
 
@@ -6,7 +7,8 @@ HOW TO USE:
 
 Drop a cab file named "fake.cab" into your c:\users\\%username%\downloads folder (or change it in the source code ;) 
 
-Run lpe.exe  .... this will drop the contents of our cab file into system32 (if you use my cab file it will drop evil.dll in system32)
+Run lpe.exe  .... this will drop the contents of our cab file into system32 (if you use my cab file it will drop ualapi.dll in system32)
+If it does not work the first time around, try again, sometimes the WatchDirectory function catches the wrong directory change...I'll leave it up to you for improvement.
 
 
 HOW THIS WORKS:
